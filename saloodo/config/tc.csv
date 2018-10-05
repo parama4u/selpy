@@ -1,0 +1,7 @@
+TSID,TCID,username,password
+TS001,TC001,param,param
+TS001,TC002,param,123456
+TS001,TC003,test+carrier@saloodo.com,param
+TS001,TC004,param@saloodo.com,123456
+
+
