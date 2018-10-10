@@ -1,4 +1,5 @@
 import selenium.webdriver
+from selenium.webdriver.common.by import By
 
 class SelPy:
 
@@ -10,4 +11,10 @@ class SelPy:
         except:
             print("Error while starting chrome driver")
     def navigate(self,url):
+        self.driver.delete_all_cookies()
         self.driver.get(url)
+        self.driver.find_element(By.XPATH, '//button[text()="OK"]').click()
+        
+        
+    def curURL(self):
+        return self.driver.current_url
