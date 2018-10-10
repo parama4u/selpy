@@ -1,4 +1,8 @@
-import selpy.selpy
-import saloodo.pgeLogin
 
-saloodo.pgeLogin.PageLogin()
+from saloodo import tests
+
+if __name__ == '__main__':
+    tOb=tests.tests()
+    tOb.test_avail()
+
+
